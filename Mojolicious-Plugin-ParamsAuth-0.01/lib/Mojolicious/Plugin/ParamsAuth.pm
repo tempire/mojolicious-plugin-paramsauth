@@ -52,7 +52,9 @@ L<Mojolicous::Plugin::ParamsAuth> is a helper for authenticating using url param
 
 =head1 USAGE
 
-=head2 Callback
+    # Request:
+    GET /?userinput=username&passinput=password
+
 
     use Mojolicious::Lite;
 
@@ -64,13 +66,15 @@ L<Mojolicous::Plugin::ParamsAuth> is a helper for authenticating using url param
         return $self->render_text('ok')
           if $self->params_auth(userinput => passinput =>
               sub { return 1 if "@_" eq 'username password' });
-
     };
 
     app->start;
 
-    # Request:
-    GET /?userinput=username&password=password
+Any number of parameters can be specified:
+
+    $self->params_auth( one => two => three => four => sub { } )
+
+The subroutine callback receives form values as the parameter list.
 
 =head1 METHODS
 
