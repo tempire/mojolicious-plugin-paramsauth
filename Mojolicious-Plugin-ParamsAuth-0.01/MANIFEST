@@ -3,17 +3,6 @@ MANIFEST
 META.yml
 Makefile.PL
 README.pod
-cover_db/cover.12
-cover_db/cover.css
-cover_db/coverage.html
-cover_db/lib-Mojolicious-Plugin-ParamsAuth-pm--branch.html
-cover_db/lib-Mojolicious-Plugin-ParamsAuth-pm--subroutine.html
-cover_db/lib-Mojolicious-Plugin-ParamsAuth-pm.html
-cover_db/structure/875318bc99b4086fbc1f97732863659e
-cover_db/structure/88cfdcb5b1336f40334c3df7cc9bd786
-cover_db/t-auth-t--branch.html
-cover_db/t-auth-t--subroutine.html
-cover_db/t-auth-t.html
 dist.ini
 lib/Mojolicious/Plugin/ParamsAuth.pm
 t/auth.t
