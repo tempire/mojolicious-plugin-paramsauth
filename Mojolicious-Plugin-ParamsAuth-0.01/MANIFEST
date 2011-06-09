@@ -1,8 +1,0 @@
-LICENSE
-MANIFEST
-META.yml
-Makefile.PL
-README.pod
-dist.ini
-lib/Mojolicious/Plugin/ParamsAuth.pm
-t/auth.t

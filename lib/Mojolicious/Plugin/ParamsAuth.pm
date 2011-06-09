@@ -3,7 +3,7 @@ package Mojolicious::Plugin::ParamsAuth;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use base 'Mojolicious::Plugin';
 
@@ -97,7 +97,7 @@ L<http://github.com/tempire/mojolicious-plugin-paramsauth>
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 AUTHOR
 

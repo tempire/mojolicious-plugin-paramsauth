@@ -21,15 +21,16 @@ get '/' => sub {
     my $self = shift;
 
     return $self->render_text('ok')
-      if $self->params_auth(userinput => passinput =>
-          sub { return 1 if "@_" eq 'username password' });
+      if $self->params_auth(
+              userinput => passinput =>
+                sub { return 1 if "@_" eq 'username password' }
+      );
 
     return $self->render(text => '', status => 401);
 };
 
 # Tests
-my $client = app->client;
-my $t      = Test::Mojo->new;
+my $t = Test::Mojo->new;
 
 $t->get_ok('/')->status_is(401);
 $t->get_ok('/?userinput=&passinput=')->status_is(401);
