@@ -5,7 +5,7 @@ use Mojo::Parameters;
 
 # Make sure sockets are working
 plan skip_all => 'working sockets required for this test!'
-  unless Mojo::IOLoop->new->generate_port;    # Test server
+  unless Mojo::IOLoop::Server->generate_port;    # Test server
 
 plan tests => 14;
 

@@ -63,7 +63,7 @@ L<Mojolicous::Plugin::ParamsAuth> is a helper for authenticating using url param
     get '/' => sub {
         my $self = shift;
 
-        return $self->render_text('ok')
+        return $self->render(text => 'ok')
           if $self->params_auth(userinput => passinput =>
               sub { return 1 if "@_" eq 'username password' });
     };
